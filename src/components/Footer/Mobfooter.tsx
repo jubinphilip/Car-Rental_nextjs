@@ -12,18 +12,18 @@ function Mobfooter() {
     <div className="footer-nav">
         <div className="footer-logo-social">
             <div  >
-                <img className="logo" src="/assets/logo1.svg" alt=""/>
+                <img className="logo" src="assets/logo1.svg" alt=""/>
                 <p >
                     Member of the <br/>Al Habtoor Group
                 </p>
             </div>
             <div className="mob-social-medias">
                 
-                <img src="/assets/fb.svg" alt=""/>
-                <img src="/assets/x.svg" alt=""/>
-                <img src="/assets/insta.svg" alt=""/>
-                <img src="/assets/in.svg" alt=""/>
-                <img src="/assets/yt2.svg" alt=""/>
+                <img src="assets/fb.svg" alt=""/>
+                <img src="assets/x.svg" alt=""/>
+                <img src="assets/insta.svg" alt=""/>
+                <img src="assets/in.svg" alt=""/>
+                <img src="assets/yt2.svg" alt=""/>
             </div>
         </div>
         <div className="footer-nav-items">

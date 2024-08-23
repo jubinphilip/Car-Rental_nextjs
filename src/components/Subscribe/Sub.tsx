@@ -1,7 +1,18 @@
 import './sub.css'
-import React from 'react'
+import React, { useState } from 'react'
 
 function Subscribe() {
+    type Record={
+        name:string,
+        email:string
+    }
+    const [record,setRecord]=useState({})
+    function handleChange(e:React.ChangeEvent<HTMLInputElement>)
+    {
+        e.preventDefault()
+        setRecord((prev)=>({...prev,[e.target.name]:e.target.value}))
+        console.log(record)
+    }
   return (
     <div>
         
@@ -11,8 +22,8 @@ function Subscribe() {
             Subscribe here for exclusive offers and updates!
         </h4>
         <form className="subform" id="subForm">
-            <input type="text" id="username" placeholder="Name"  required/>
-            <input type="email" id="usermail" placeholder="Email" required/><br/>
+            <input type="text" id="username" name='username' placeholder="Name" onChange={handleChange}  required/>
+            <input type="email" id="usermail" name='useremail' placeholder="Email" onChange={handleChange} required/><br/>
             <span id="emailSpan" ></span><br/>
             <span>Don&apost miss out! enter your email and your name, then hit subscribe to unlock a world of special offers and details</span><br/>
             <button >Subscribe</button>
