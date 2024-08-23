@@ -37,17 +37,17 @@ export default function Navbar()
   return (
     <>
          <div className="header-icons">
-                <img src="/assets/fb.svg" alt="" />
-                <img src="/assets/insta.svg" alt="" />
-                <img src="/assets/x.svg" alt="" />
-                <img src="/assets/in.svg" alt="" />
+                <img src="assets/fb.svg" alt="" />
+                <img src="assets/insta.svg" alt="" />
+                <img src="assets/x.svg" alt="" />
+                <img src="assets/in.svg" alt="" />
                 </div>
         
                 <div className="navbar-items">
                     <div className="company-logo">
                         <div className="icon">
-                            <img className="txt" src="/assets/carrent.svg" alt=""/>
-                            <img className="logo" src="/assets/logo.svg" alt=""/>
+                            <img className="txt" src="assets/carrent.svg" alt=""/>
+                            <img className="logo" src="assets/logo.svg" alt=""/>
                         </div>
                     </div>
         
@@ -62,8 +62,8 @@ export default function Navbar()
                             );
                             })}
 
-                                <li><a href="#"><img src="/assets/notificaion.svg" alt=""/></a></li>
-                                <li><a href="#"><img src="/assets/navbar.svg" alt=""/></a></li>
+                                <li><a href="#"><img src="assets/notificaion.svg" alt=""/></a></li>
+                                <li><a href="#"><img src="assets/navbar.svg" alt=""/></a></li>
                             </ul>
                     </div>
                 </div>
@@ -71,17 +71,17 @@ export default function Navbar()
                 <div className="mobile-items">
                     <div className="mobile-company-logo">
                         <div className="mob-icon">
-                            <img className="mob-txt" src="/assets/carrent.svg" alt=""/>
-                            <img className="mob-logo" src="/assets/logo.svg" alt=""/>
+                            <img className="mob-txt" src="assets/carrent.svg" alt=""/>
+                            <img className="mob-logo" src="assets/logo.svg" alt=""/>
                         </div>
                         <div className="mobile-menu" >
-                            <img src="/assets/menu.svg" onClick={togglePopup}alt=""/>
+                            <img src="assets/menu.svg" onClick={togglePopup}alt=""/>
                         </div>
                     </div>
                     
                    { //if popup is true then only the sidebar is displayed  state of popup toggled on clicking the menuopen and menu close buttons
                    popup && <div className="popup-window">
-                        <img className="menu-close" src="/assets/menu-close.svg" alt="" onClick={togglePopup}/>
+                        <img className="menu-close" src="assets/menu-close.svg" alt="" onClick={togglePopup}/>
                             <ul>
                             {links.map((link) => {
                             return (
