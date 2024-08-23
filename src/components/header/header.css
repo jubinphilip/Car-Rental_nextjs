@@ -161,6 +161,11 @@ background-color: white;
 border-radius: 20px;
 padding: 1px;
 }
+#dwnld-txt
+{
+    display: flex;
+    text-align: center;
+}
 
 @media (max-width: 1024px)
 {
