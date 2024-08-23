@@ -81,13 +81,13 @@
 }
 .date-ico
 {
-    background-image: url(/assets/cal.svg);
+    background-image: url(../../../public/assets/cal.svg);
     background-size: 20px;
     background-repeat: no-repeat;
 }
 .loc-ico
 {
-    background-image: url(/assets/loc.svg);
+    background-image: url(../../../public/assets/loc.svg);
     background-size: 15px;
     background-repeat: no-repeat;
 }
