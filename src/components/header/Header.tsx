@@ -82,8 +82,8 @@ function Header() {
         <div className="headertext">
             <p id="dwnld-txt">Download our App for easy accessibility anytime, anywhere!</p>
             <div>
-            <button className="dwnl-link"><a href="https://apps.apple.com/"><Image width={100} height={0} layout='responsive' src="/assets/app.svg" alt=""/></a></button>
-            <button className="dwnl-link"><a href="https://play.google.com/store"><img src="/assets/play.svg" alt=""/></a></button>
+            <button className="dwnl-link"><a href="https://apps.apple.com/"><Image width={100} height={0} layout='responsive' src="assets/app.svg" alt=""/></a></button>
+            <button className="dwnl-link"><a href="https://play.google.com/store"><img src="assets/play.svg" alt=""/></a></button>
         </div>
         </div>
 

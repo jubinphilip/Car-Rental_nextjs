@@ -6,7 +6,7 @@
 
 .main-header
 {
-    background-image: url(/assets/Group.svg);
+    background-image: url(../../../public/assets/Group.svg);
     background-repeat: no-repeat;
     border-radius: 20px;
     background-size: cover;
