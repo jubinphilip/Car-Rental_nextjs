@@ -52,3 +52,10 @@ line-height: 24.71px;
 text-align: left;
 margin-bottom: 1 rem;
 }
+@media (max-width: 1024px)
+{
+    .faq-section
+    {
+        width: 99%;
+    }
+}
