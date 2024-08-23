@@ -10,9 +10,7 @@ import Rent from "@/components/Rent/Rent";
 import Subscribe from "@/components/Subscribe/Sub";
 import { useEffect, useState } from "react";
 
-type Options={
-  options:readonly String[]
-}
+
 
 
 
