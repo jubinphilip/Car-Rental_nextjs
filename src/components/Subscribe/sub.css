@@ -50,6 +50,9 @@ margin-top: 16px;
     text-align: center;
     color: #FFFFFF;
 }
+#emailSpan{
+    color: red;
+}
 .sub-part2
 {
 margin-left: 5vw;
