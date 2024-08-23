@@ -4,7 +4,7 @@ function Popular() {
     const cars=[
         {
             id:1,
-            img:"/assets/car1.svg",
+            img:"assets/car1.svg",
             carName:" Mitsubishi Eclipse",
             des:"Eclipse Cross is a fusion of sharp coupe looks and dynamic SUV mobility with signature Mitsubishi styling, technology and driving confidence.",
             people:6,
@@ -15,7 +15,7 @@ function Popular() {
         },
         {
             id:2,
-            img:"/assets/car2.svg",
+            img:"assets/car2.svg",
             carName:"  Jac J7",
             des:" S3 Plus has been rated Five-Star in C-NCAP including front impact, side impact, frontal side impact & Whipping test.",
             people:6,
@@ -44,10 +44,10 @@ function Popular() {
                 </h4>
                 <p>{car.des}</p>
                 <div className="car-details-icons">
-                    <img src="/assets/seating.svg" alt="seating"/><label>{car.people}</label>
-                    <img src="/assets/auto.svg" alt="auto"/><label>{car.type}</label>
-                    <img src="/assets/door.svg" alt="door"/><label >{car.door}</label>
-                    <img src="/assets/ac.svg" alt="ac"/><label>{car.ac}</label>
+                    <img src="assets/seating.svg" alt="seating"/><label>{car.people}</label>
+                    <img src="assets/auto.svg" alt="auto"/><label>{car.type}</label>
+                    <img src="assets/door.svg" alt="door"/><label >{car.door}</label>
+                    <img src="assets/ac.svg" alt="ac"/><label>{car.ac}</label>
                 </div>
                 <div className="rent-details">
                     <p>

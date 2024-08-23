@@ -1,5 +1,5 @@
 .poster {
-    background-image: url(/assets/poster.svg);
+    background-image: url(../../../public/assets/poster.svg);
     width: 92%;
     height: 60vh;
     margin-left: 4vw;

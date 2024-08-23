@@ -25,7 +25,7 @@ function Footer() {
                     <div className="footer-logo">
                         <img 
                             className="logo" 
-                            src="/assets/logo1.svg" 
+                            src="assets/logo1.svg" 
                             alt="Company Logo"
                             loading="lazy"
                         />
@@ -46,34 +46,34 @@ function Footer() {
                         <p>Follow Us On</p>
                         <div className="social-medias">
                             <img 
-                                src="/assets/fb1.svg" 
+                                src="assets/fb1.svg" 
                                 alt="Facebook"
                                 loading="lazy"
                             />
                             <img 
-                                src="/assets/x1.svg" 
+                                src="assets/x1.svg" 
                                 alt="Twitter"
                                 loading="lazy"
                             />
                             <img 
-                                src="/assets/insta1.svg" 
+                                src="assets/insta1.svg" 
                                 alt="Instagram"
                                 loading="lazy"
                             />
                             <img 
-                                src="/assets/in1.svg" 
+                                src="assets/in1.svg" 
                                 alt="LinkedIn"
                                 loading="lazy"
                             />
                             <img 
-                                src="/assets/yt.svg" 
+                                src="assets/yt.svg" 
                                 alt="YouTube"
                                 loading="lazy"
                             />
                         </div>
                         <div className="sign">
                             <img 
-                                src="/assets/sign.svg" 
+                                src="assets/sign.svg" 
                                 alt="Sign"
                                 loading="lazy"
                             />

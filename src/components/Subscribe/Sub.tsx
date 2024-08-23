@@ -19,7 +19,7 @@ function Subscribe() {
         </form>
     </div>
     <div className="sub-part2">
-        <img src="/assets/phone.svg" alt="" className="phone-img"/>
+        <img src="assets/phone.svg" alt="" className="phone-img"/>
         <div className="app-link">
             <span>Enter your number and receive 
                 a direct link to download the app<br/></span>
