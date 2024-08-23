@@ -3,12 +3,10 @@ import React, { useState } from 'react'
 
 function Subscribe() {
     
-    type Record={
-        name:string,
-        email:string
-    }
+  
     const [error,setError]=useState<string>("")
     const [record,setRecord]=useState({username:"" ,useremail:""})
+    const [number,setNumber]=useState<number>()
     function handleChange(e:React.ChangeEvent<HTMLInputElement>)
     {
         e.preventDefault()
