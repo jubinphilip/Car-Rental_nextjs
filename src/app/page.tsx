@@ -10,6 +10,9 @@ import Rent from "@/components/Rent/Rent";
 import Subscribe from "@/components/Subscribe/Sub";
 import { useEffect, useState } from "react";
 
+type Options={
+  options:readonly String[]
+}
 
 
 
@@ -31,12 +34,12 @@ useEffect(()=>
 },[])
   return (
   <>
-    <Header/>
+    <Header />
     {width && <Headermobile/>}
     <Slider/>
     <Popular/>
     <Subscribe/>
-    <Submobile/>
+    <Submobile />
     <Rent/>
     <Locations/>
     <Faq/>

@@ -3,6 +3,7 @@ import './header.css'
 import Image from 'next/image'
 function Header() {
     const[type,setType]=useState<string>("pick")
+    //Handles the user click that is select strting point and enter dropping point
     function handleLoc(value:string)
     {
         setType(value)
@@ -23,7 +24,8 @@ function Header() {
                 </li>
             </ul>
         </div>
-        { type==="pick" &&<div className="main-input-container">
+        { //if the user selects pick up option then type will equal to pick and displays this block
+        type==="pick" &&<div className="main-input-container">
             <div className="header-inputs">
                 <div className='viewPlace' >
                     <img src="assets/loc.svg" alt=""/>
@@ -48,7 +50,8 @@ function Header() {
             <img className="search" src="assets/search.svg" alt=""/>
             <div className="header-input-name"><p>Quick Book</p></div>
         </div>}
-        {type==="drop" &&<div className='dropOff'>
+        {//if the user selects drop option then type will equal to drop and displays this block
+        type==="drop" &&<div className='dropOff'>
         <div className="header-inputs">
                 <div className='viewPlace' >
                     <img src="assets/loc.svg" alt=""/>
@@ -80,9 +83,10 @@ function Header() {
                 
         </div>}
         <div className="headertext">
+            {/*Links for downloading the app */}
             <p id="dwnld-txt">Download our App for easy accessibility anytime, anywhere!</p>
             <div>
-            <button className="dwnl-link"><a href="https://apps.apple.com/"><Image width={100} height={0} layout='responsive' src="assets/app.svg" alt=""/></a></button>
+            <button className="dwnl-link"><a href="https://apps.apple.com/"><img  src="assets/app.svg" alt=""/></a></button>
             <button className="dwnl-link"><a href="https://play.google.com/store"><img src="assets/play.svg" alt=""/></a></button>
         </div>
         </div>

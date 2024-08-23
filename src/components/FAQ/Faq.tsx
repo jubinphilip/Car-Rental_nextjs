@@ -2,10 +2,12 @@ import React, { useState } from 'react'
 import './faq.css'
 function Faq() {
     const[answer,setAnswer]=useState<number>()
+    //handles the click of the user for showing answer
     const handleAnswer=(id:number)=>
     {
         setAnswer(id);
     }
+    //Array which holds question and answer data
     const faqs=[
         {
             id:1,
@@ -43,14 +45,16 @@ function Faq() {
         <section className="faq-section">
     <h4>Frequently Asked Questions</h4>
     <div className="questions">
-    {faqs.map((faq)=>
+    {//mapping through the questions and anwers 
+    faqs.map((faq)=>
     {
         return(
             <div className="question-answers" key={faq.id}>
     
             <div className="question">
                 <label >{faq.question}</label>
-               { answer!==faq.id && <img src="assets/plusmark.svg" alt="" onClick={()=>handleAnswer(faq.id)}/>}
+               { //if  the id passed on click is equal to the id then only answer is shown and the image changes
+               answer!==faq.id && <img src="assets/plusmark.svg" alt="" onClick={()=>handleAnswer(faq.id)}/>}
                { answer===faq.id && <img src="assets/xmark.svg" alt="" onClick={()=>handleAnswer(0)}/>}
             </div>
     

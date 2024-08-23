@@ -1,6 +1,7 @@
 import React from 'react'
 import './popular.css'
 function Popular() {
+    //cars array stores the details of cars 
     const cars=[
         {
             id:1,
@@ -32,7 +33,8 @@ function Popular() {
         <h3>Most Popular Cars</h3>
     </div>
     <div className="popular-content">
-       { cars.map((car)=>
+       {//maps through the cars array
+        cars.map((car)=>
        {
         return (
             <div className="car" key={car.id}>

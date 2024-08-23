@@ -4,7 +4,7 @@ function Mobfooter() {
     const footerItems=[['Home','About Us','Services','Offers','Locations'],
     ['Faq','Terms & Conditions','Service Request'],
     ['privacy  Policy','Services']]
-
+//Footer items store array of array which contain footer elements and companies store company name
     const companies=[['Hospitality','Real-Estate','Publishing'],['Education','Automotive','Vehicle Leasing']]
   return (
     <div>
@@ -27,7 +27,8 @@ function Mobfooter() {
             </div>
         </div>
         <div className="footer-nav-items">
-            {footerItems.map((items,index)=>(
+            {//mapping through the array of arrays
+            footerItems.map((items,index)=>(
                 <ul key={index}>{items.map((item,subindex)=>(
                     <li key={subindex}>{item}</li>
                 ))}</ul>
@@ -40,7 +41,7 @@ function Mobfooter() {
         <p>
             Al Habtoor Companies
         </p>
-        {
+        {   //mapping through companies
             companies.map((items, index) => (
                 <ul key={index}>
                     {items.map((item, subindex) => (

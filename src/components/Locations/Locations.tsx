@@ -1,6 +1,7 @@
 import React from 'react'
 import './locations.css'
 function Locations() {
+    //Array which store all the locatins
     const location=[
         {
             id: 1,
@@ -30,7 +31,8 @@ function Locations() {
     <h4>Locations</h4>
     <div className="locations">
 
-        {location.map((loc)=>
+        {//Mapping through the locations
+        location.map((loc)=>
         {
         return(
             <div className="location"  key={loc.id}>
