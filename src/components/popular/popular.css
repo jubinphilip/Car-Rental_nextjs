@@ -1,0 +1,123 @@
+.popular-car
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 92%;
+
+    margin-left: 4vw;
+}
+.popular-head
+{
+    width: fit-content;
+    margin-top: 2.5rem;
+    margin-bottom: 2rem;
+    
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.popular-head h3{
+    font-size: 2.2rem;
+    font-weight: 400;
+    line-height: 52.11px;
+    text-align: center;
+}
+.popular-content
+{
+    width: 100%;
+    display: flex;
+    gap: 22px;
+    overflow-x: auto; 
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+}
+.car
+{
+    display: flex;
+
+}
+.car-details
+{
+
+border: 1px solid  #D9D9D9;
+}
+#car-name
+{
+    color: #1A202C;
+font-size: 28px;
+font-weight: 500;
+line-height: 42px;
+text-align: left;
+margin-top: 1.5rem ;
+margin-left: 2vw;
+}
+.car-details p{
+font-size: 12px;
+font-weight: 400;
+line-height: 18.5px;
+text-align: left;
+margin-top: 3px;
+margin-left: 41px;
+}
+.car-details-icons
+{
+    display: flex;
+    margin-top: 72px;
+    margin-left: 42px;
+    margin-right: 53px;
+    height: 17px;
+    align-items: center;
+    gap: 4px;
+
+}
+
+
+
+.car-details-icons label{
+    width: 57px;
+    height: 17px;
+font-size: 11px;
+font-weight: 500;
+line-height: 16.5px;
+letter-spacing: -0.02em;
+text-align: left;    
+}
+.rent-details
+{
+    display: flex;
+    margin-top: 35px;
+}
+.rent-details p
+{
+font-size: 16px;
+font-weight: 600;
+line-height: 24px;
+text-align: left;
+}
+.rent-details button{
+height:37px;
+padding: 0px 20px 0px 20px;
+border-radius: 4px ;
+background: #E21E26;
+font-size: 12px;
+font-weight: 600;
+line-height: 21px;
+letter-spacing: -0.02em;
+text-align: center;
+color:  #FFFFFF;
+border: none;
+}
+button:hover
+{
+    cursor: pointer;
+}
+
+@media (max-width: 1024px)
+{
+.car{
+    flex-direction: column;
+}
+}

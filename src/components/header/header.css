@@ -1,0 +1,188 @@
+.header{
+    width: 100%;
+    display: flex;
+    
+}
+
+.main-header
+{
+    background-image: url(/assets/Group.svg);
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    background-size: cover;
+    margin-left: 4vw;
+    width:92%;
+    height: fit-content;
+    border: 0.5px solid #FFFFFF
+}
+
+.header-nav
+{
+    
+    margin-top: 3vh;
+    margin-left:3vw;
+}
+.header-nav ul
+{
+    display: flex;
+    gap: 1rem;
+}
+.header-nav ul li
+{
+    height: 2.5rem;
+    opacity: 0.7px;
+}
+.header-nav ul li{
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 56.74px;
+    letter-spacing: -0.035em;
+    text-align: center;
+}
+
+.main-input-container{
+    display: flex;
+    width: 100%;
+}
+.vehicle-select{
+
+    color: aliceblue;
+    height: 29px;
+    border: none;
+    border-radius: 24px ;
+    background: rgba(0, 0, 0, 0.1);
+    font-size: .8rem;
+    font-weight: 400;
+    line-height: 56.74px;
+    letter-spacing: -0.035em;
+    text-align: center;
+}
+.header-nav ul li:hover{
+    border-bottom: 1px solid white;
+}
+
+.header-inputs
+{
+    display: flex;
+    height:2rem;
+    margin-top: 3vh;
+    margin-left: 5vw;
+    gap: 2rem;
+}
+.header-input
+{
+    border-radius: 18px;
+    border: none;
+    height: 2rem;
+    padding-left: 7px;
+}
+.header-input-name{
+    display: flex;
+    width: 15rem;
+    justify-content: center;
+    border-radius: 18px ;
+    border: 1px solid white;
+    align-items: center;
+    margin-left: 2rem;
+    margin-top: 1rem;
+}
+
+.header-input-name p {
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+    text-align: left;
+}
+.input-wrapper
+{
+    background-color: white;
+    border-radius: 20px;
+}
+.cal-icon
+{
+    margin-left: 2px;
+}
+
+.search{
+    margin-top:1.4rem;
+    margin-left: 2vw;
+}
+
+.headertext
+{
+    display: flex;
+    margin-left: 4%;
+    margin-top: 2rem;
+    align-items: center;
+    margin-bottom: 3vh;
+}
+#dwnld-txt
+{
+font-size: 14px;
+font-weight: 300;
+line-height: 21px;
+text-align: left;
+color: #FFFFFF;
+margin-right: 1.2rem;
+}
+.dwnl-link
+{
+    margin-right: 9px;
+height: fit-content;
+border-radius: 28px ;
+background-color: black;
+}
+
+.support
+{
+    position: fixed;
+    right: 0;        
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.phone,.call
+{
+    width: 48px;
+height: 48px;
+margin-top: 10px;
+border-radius: 50% 0 0  50%;
+box-shadow: 0px 4px 4px 0px #00000040;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.viewPlace
+{
+background-color: white; 
+border-radius: 20px;
+padding: 1px;
+}
+
+@media (max-width: 1024px)
+{
+    .mobile-items
+    {
+        display: flex;
+        justify-content: space-between;
+    }
+    .header-nav,.main-input-container,.dropOff
+    {
+        display: none;
+    }
+    .header
+    {
+        width: 97%;
+        display: flex;
+    }
+    .headertext
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+       text-align: center;
+    }
+}

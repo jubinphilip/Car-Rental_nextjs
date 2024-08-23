@@ -1,0 +1,105 @@
+.input-nav 
+{
+    width: 100%;
+    padding-left: 4vw;
+    padding-right: 4vw;
+    padding-top: 4vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5vh;
+}
+.input-nav ul
+{
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    gap: 3vw;
+}
+.input-nav ul li:hover
+{
+    border-bottom: 1px solid black;
+}
+.mob-vehicle-select
+{
+    border: none;
+}
+
+.inputs
+{
+    width: 80%;
+    display: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.input-btn
+{
+    margin-left: 4vw;
+    margin-top: 2vh;
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+}
+.input-btn button
+{
+    width: 48%;
+    background-color: white; 
+    color: red; 
+    border: none; 
+    border-radius: 5px; 
+    padding: 10px 20px; 
+    cursor: pointer;
+    font-size: 13px; 
+    font-weight: 600; 
+    line-height: 19.5px;
+    border: 2px solid #E21E26; 
+    text-align: center; 
+}
+
+.input-btn button:hover {
+    background-color: #E21E26;
+    color:#F8F8F8 ;
+}
+.inputs input
+{
+    width: 100%;
+    background-color: #F6F7F9;
+    border: none;
+    height: 6vh;
+    margin-bottom: 1.5rem;
+    padding-left: 1.5rem;
+}
+.mobile-inputs
+{   
+    width: 80%;
+    padding: 4vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.date-ico
+{
+    background-image: url(/assets/cal.svg);
+    background-size: 20px;
+    background-repeat: no-repeat;
+}
+.loc-ico
+{
+    background-image: url(/assets/loc.svg);
+    background-size: 15px;
+    background-repeat: no-repeat;
+}
+input[type="datetime-local"]::-webkit-calendar-picker-indicator {
+    display: none;
+    -webkit-appearance: none;
+  }
+@media (max-width: 1024px)
+{
+    .mobile-inputs
+    {
+    
+        width: 90%;
+    }
+}

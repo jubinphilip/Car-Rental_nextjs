@@ -1,0 +1,71 @@
+.rent-car
+{
+    margin-top: 2vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.rent-car h3{
+
+font-size: 34px;
+font-weight: 400;
+line-height: 51px;
+}
+.steps
+{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top:2vh;
+    gap: 50px;
+}
+.rent-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rent-card-head {
+    width: 64px;
+    height: 52px;
+    border-radius: 5px;
+    font-size: 40px;
+    color: #E21E26;
+    background-color: #FFFFFF;
+    box-shadow: 1px 1px 1px 0px #E4E3E380;
+    font-weight: 400;
+    line-height: 1; 
+    text-align: center;
+    padding: 12px 9px 8px 6px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+.rent-card-body {
+    margin-top: 8px;
+    width: 20rem;
+    height: 178px;
+    border: 1px solid #000000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rent-card-body img{
+    width: 46px;
+height: 46px;
+margin-top: 16px;
+}
+.rent-card-body p
+{
+    width: 223px;
+height: 70px;
+opacity: 80%;
+font-family: Helvetica;
+font-size: 14px;
+font-weight: 400;
+line-height: 18.5px;
+text-align: center;
+margin-top: 2rem;
+}
