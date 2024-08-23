@@ -5,17 +5,24 @@ function Subscribe() {
     
   
     const [error,setError]=useState<string>("")
+    const [numError,setNumerror]=useState<string>("")
     const [record,setRecord]=useState({username:"" ,useremail:""})
-    const [number,setNumber]=useState<number>()
+    const [number,setNumber]=useState<string>("")
     function handleChange(e:React.ChangeEvent<HTMLInputElement>)
     {
         e.preventDefault()
         setRecord((prev)=>({...prev,[e.target.name]:e.target.value}))
         console.log(record)
     }
+    function  handleNumber(e:React.ChangeEvent<HTMLInputElement>)
+    {
+        e.preventDefault()
+        setNumber(e.target.value)
+    }
     function formValidate()
     {
-        console.log(record.username)
+      if(record.username!="" || record.useremail!="")
+      {
         const usernameRegex = /^[A-Za-z\s]+$/;
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; 
         if (!usernameRegex.test(record.username) || record.username.trim() === '') {
@@ -25,7 +32,15 @@ function Subscribe() {
         {
             setError('Invalid email address.')
         }
-        console.log(record.useremail)
+    }
+   if(number!="")
+   {
+    const phoneNumberRegex = /^\d{10}$/;
+    if (!phoneNumberRegex.test(number)) {
+        setNumerror('Phone number must be exactly 10 digits.');
+    }
+   }
+       
     }
   return (
     <div>
@@ -48,9 +63,9 @@ function Subscribe() {
         <div className="app-link">
             <span>Enter your number and receive 
                 a direct link to download the app<br/></span>
-                <input type="text" id="usernum" placeholder="Enter Phone Number" required/>
-                <span id="numSpan" ></span>
-                <button >Get the Link</button>
+                <input type="text" id="usernum" name="number" onChange={handleNumber} placeholder="Enter Phone Number" required/><br/>
+                <span id="numSpan" >{numError}</span>
+                <button onClick={formValidate}>Get the Link</button>
                 <div className="dwnld-app">
                     <span>Get it on</span><br/>
                     <a href="https://apps.apple.com/"><img src="assets/app2.svg" alt=""/></a>
