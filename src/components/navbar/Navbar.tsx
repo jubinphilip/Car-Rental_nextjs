@@ -56,7 +56,7 @@ export default function Navbar()
                             {//mapping through the links and names 
                             links.map((link) => {
                             return (
-                            <li >
+                            <li key={link.link} >
                              <a href={link.link}>{link.name}</a>
                             </li>
                             );
