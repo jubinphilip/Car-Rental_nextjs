@@ -36,7 +36,7 @@ function Header() {
                 <div className="input-wrapper">
                     <img className="cal-icon" src="assets/cal.svg" alt="Calendar Icon"/>
                   
-                    <input className="header-input"   type="datetime-local" />
+                    <input className="header-input" type="datetime-local" />
                    
                 </div>
                 <div className="input-wrapper">

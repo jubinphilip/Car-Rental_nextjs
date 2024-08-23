@@ -14,7 +14,7 @@ function Subscribe() {
             <input type="text" id="username" placeholder="Name"  required/>
             <input type="email" id="usermail" placeholder="Email" required/><br/>
             <span id="emailSpan" ></span><br/>
-            <span>Don't miss out! enter your email and your name, then hit subscribe to unlock a world of special offers and details</span><br/>
+            <span>Don&apost miss out! enter your email and your name, then hit subscribe to unlock a world of special offers and details</span><br/>
             <button >Subscribe</button>
         </form>
     </div>
