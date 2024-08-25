@@ -10,10 +10,6 @@ import Rent from "@/components/Rent/Rent";
 import Subscribe from "@/components/Subscribe/Sub";
 import { useEffect, useState } from "react";
 
-
-
-
-
 export default function Home() {
 
   const[width,setWidth]=useState(false)

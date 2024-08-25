@@ -19,7 +19,7 @@ color: #FFFFFF;
 .locations{
     display: flex;
     flex-wrap: wrap;
-    margin-top: 5vh;
+    margin-top: 2vh;
     gap: 5vw;
 }
 .location
@@ -48,4 +48,10 @@ height: 41px;
 border: 1px solid #FFFFFF;
 opacity:20%;
 background-color: #FFFFFF;
+}
+@media (max-width: 1024px)
+{
+    .locations{
+        gap: 2vw;
+    }
 }
