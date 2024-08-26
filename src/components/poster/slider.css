@@ -1,41 +1,75 @@
 .poster {
-    background-image: url(../../../public/assets/poster.svg);
     width: 92%;
     height: 60vh;
     margin-left: 4vw;
     border-radius: 23px;
-    background-repeat: no-repeat;
-    background-size: cover; 
-    background-position: center; 
     margin-top: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px; 
-    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
 }
+
+.slider-container {
+    width: 200%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: slide 3s infinite;
+}
+
+.poster-image {
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+}
+
+.poster-image.current {
+    left: 0;
+}
+
+.poster-image.next {
+    left: 50%;
+}
+
+@keyframes slide {
+    0% {
+        left: 0;
+    }
+    100% {
+        left: -100%;
+    }
+}
+
 .poster-txt {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     font-size: 1.2rem; 
     font-weight: 400;
     line-height: 1.5; 
     text-align: left;
     color: #FFFFFF;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); 
-    margin-top: 25vh; 
+    z-index: 1;
 }
-.poster-txt p{
+
+.poster-txt p {
     font-weight: 400;
 }
-.poster-txt button{
+
+.poster-txt button {
     width: 153px;
-height: 31.49px;
-border-radius: 32px;
- background: #009046;
- border: none;
-font-size: 15.22px;
-font-weight: 600;
-line-height: 19.25px;
-text-align: left;
-padding: 5.4px 19px;
-color:  #FFFFFF;
+    height: 31.49px;
+    border-radius: 32px;
+    background: #009046;
+    border: none;
+    font-size: 15.22px;
+    font-weight: 600;
+    line-height: 19.25px;
+    text-align: left;
+    padding: 5.4px 19px;
+    color: #FFFFFF;
 }
