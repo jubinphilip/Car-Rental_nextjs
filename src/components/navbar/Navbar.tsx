@@ -85,7 +85,7 @@ export default function Navbar()
                             <ul>
                             {links.map((link) => {
                             return (
-                            <li key={link.link}>
+                            <li className="popup-items" key={link.link}>
                              <a href={link.link}>{link.name}</a>
                             </li>
                             );
