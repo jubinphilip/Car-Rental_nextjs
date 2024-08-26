@@ -3,10 +3,10 @@ import './slider.css'
 
 // Array of dummy images
 const images = [
-  "/assets/poster.svg",
-  "/assets/poster.svg",
-  "/assets/poster.svg",
-  "/assets/poster.svg",
+  "assets/poster.svg",
+  "assets/poster.svg",
+  "assets/poster.svg",
+  "assets/poster.svg",
 ];
 
 function Slider() {
