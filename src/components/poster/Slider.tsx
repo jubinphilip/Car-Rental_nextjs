@@ -10,6 +10,7 @@ const images = [
 ];
 
 function Slider() {
+  //states for managing current and next images
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [nextImageIndex, setNextImageIndex] = useState(1);
 
@@ -17,8 +18,8 @@ function Slider() {
     const intervalId = setInterval(() => {
       setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
       setNextImageIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 10000);
-
+    }, 3000);
+    //on  every 3 secnds  the images refreshes
     return () => clearInterval(intervalId);
   }, []);
 
